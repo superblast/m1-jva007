@@ -1,4 +1,5 @@
 package com.luxoft.basics.part2.xtasks;
+// comment from idea
 
 import javax.swing.*;
 import java.awt.*;
