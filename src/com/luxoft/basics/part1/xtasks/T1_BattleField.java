@@ -6,7 +6,6 @@ public class T1_BattleField
     {
         System.out.println("  | A B C D E F G H I");
         System.out.println("--|------------------");
-
         System.out.println("1 | B B B B B B B B B");
         System.out.println("2 |");
         System.out.println("3 | B B   B B B   B B");

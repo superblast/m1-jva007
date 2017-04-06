@@ -5,19 +5,21 @@ import java.awt.*;
 
 public class T3_TanksMove extends JPanel
 {
-    int tankX = 0;
-    int tankY = 0;
+    int tankX = 0; // 0
+    int tankY = 0; // 0
 
     void runTheGame()
     {
-        move(2);
-        move(2);
-        move(3);
-        move(3);
-        move(4);
-        move(4);
-        move(1);
-        move(1);
+//        move(2);
+//        move(2);
+//        move(3);
+//        move(3);
+//        move(4);
+//        move(4);
+//        move(1);
+//        move(1);
+        moveToEnd(2);
+        moveToEnd(4);
 
         // TODO fill free to add more tests here
     }
@@ -51,6 +53,15 @@ public class T3_TanksMove extends JPanel
             repaint();
         }
         sleep(250);
+    }
+
+    void moveToEnd(int direction) {
+        if (direction == 2 || direction == 4){
+            while (tankX <= 512 && tankX >= 64) {
+                move(direction);
+                System.out.println("I like to move it " + direction);
+            }
+        }
     }
 
 

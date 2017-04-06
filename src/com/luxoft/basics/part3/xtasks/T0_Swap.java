@@ -7,12 +7,12 @@ public class T0_Swap
     public static void main(String[] args) throws Exception
     {
         int[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-        System.out.println(Arrays.toString(numbers));
+        System.out.println("Arr before swap" + Arrays.toString(numbers));
         System.out.println();
 
         swap(numbers, 1, 4);
         swap(numbers, 2, 7);
-        System.out.println(Arrays.toString(numbers));
+        System.out.println("Arr after swap" + Arrays.toString(numbers));
     }
 
     /**
@@ -23,5 +23,8 @@ public class T0_Swap
     public static void swap(int[] data, int idx1, int idx2)
     {
         // TODO YOUR CODE HERE
+        int idx1Val = data[idx1];
+        data[idx1] = data[idx2];
+        data[idx2] = idx1Val;
     }
 }
