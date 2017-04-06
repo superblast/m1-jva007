@@ -33,6 +33,24 @@ public class T3_TanksMove extends JPanel
     void move(int direction)
     {
         // TODO YOUR CODE HERE
+        int increment = 64;
+        if (direction == 1) {
+            tankY = tankY - increment;
+            repaint();
+        }
+        else if (direction == 2) {
+            tankX = tankX + increment;
+            repaint();
+        }
+        else if (direction == 3) {
+            tankY = tankY + increment;
+            repaint();
+        }
+        else if (direction == 4) {
+            tankX = tankX - increment;
+            repaint();
+        }
+        sleep(250);
     }
 
 
