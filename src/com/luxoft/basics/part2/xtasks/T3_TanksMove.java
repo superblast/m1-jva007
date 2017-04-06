@@ -57,9 +57,9 @@ public class T3_TanksMove extends JPanel
 
     void moveToEnd(int direction) {
         if (direction == 2 || direction == 4){
-            while (tankX <= 512 && tankX >= 64) {
+            while (tankX <= 512 && tankX >= 0) {
                 move(direction);
-                System.out.println("I like to move it " + direction);
+                System.out.println("I like to move it " + direction + " coor X:" + tankX + " coor Y: " + tankY);
             }
         }
     }

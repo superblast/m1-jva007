@@ -44,6 +44,7 @@ public class T3_TanksFire extends JPanel
     void runTheGame() throws Exception
     {
         printCurrentBattleField();
+        boolean fireDone = true;
 
         while (true)
         {
@@ -64,6 +65,18 @@ public class T3_TanksFire extends JPanel
     void fire()
     {
         // TODO YOUR CODE HERE
+//        tankX = 128;
+//        tankY = 512;
+        // 1 - top, 2 - right, 3 - down, 4 - left
+        if (tankDirection == 1) {
+            bulletX = tankX + 25;
+            bulletY = tankY;
+            while (bulletY >= 0) {
+                bulletY = bulletY -1;
+                sleep(5);
+                repaint();
+        }
+        }
     }
 
     private void printCurrentBattleField()
